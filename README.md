@@ -2,7 +2,7 @@
 
 This module provides the **core ID calculations** used by the **Gnosis Conditional Tokens Framework (CTF)** — the plumbing for building prediction-market backends.
 
-## ✨ Features
+## Features
 - **Condition ID** – unique ID for each market question  
 - **Collection ID (single)** – outcome subset (e.g. YES / NO)  
 - **Collection ID (parent)** – for hierarchical combinations  
@@ -11,7 +11,7 @@ This module provides the **core ID calculations** used by the **Gnosis Condition
 - Unit-tested with deterministic & BN254-combine properties  
 - CLI to print IDs for given inputs
 
-## 🛠 Quick Start
+## Quick Start
 ```bash
 # install deps
 go mod tidy
