@@ -8,8 +8,8 @@ This module provides the **core ID calculations** used by the **Gnosis Condition
 - **Collection ID (parent)** – for hierarchical combinations  
 - **Position ID** – ERC-1155 token ID = `keccak256(collateral | collection)`  
 - **BN254 Combine** – order-independent & associative set-combine for multi-condition markets  
-- ✅ Unit-tested with deterministic & BN254-combine properties  
-- 🖥 CLI to print IDs for given inputs
+- Unit-tested with deterministic & BN254-combine properties  
+- CLI to print IDs for given inputs
 
 ## 🛠 Quick Start
 ```bash
@@ -33,11 +33,11 @@ collectionId: 0x...
 positionId  : 0x...
 ```
 
-## 🧩 When to Use
+## When to Use
 - **Binary / single-condition** market → `GetConditionID` + `GetCollectionIDSingle` + `GetPositionID`
 - **Multi-condition / subset tokens** → combine base collections with `CombineCollectionsBN254`
 
-## 📂 Project Layout
+## Project Layout
 ```
 ctf_local/
   ctf_id.go              # keccak-based IDs
@@ -46,7 +46,7 @@ ctf_local/
   cmd/ctf_id_cli/main.go # demo CLI
 ```
 
-## ⚠️ Notes
+## Notes
 - Keccak helpers mirror Solidity `abi.encodePacked` (address 20B + bytes32 + uint256 BE).
 - BN254 combine makes `A⊕B == B⊕A` and associative for complex markets.
 - CLI is for local testing / generating golden vectors; not a production service.
