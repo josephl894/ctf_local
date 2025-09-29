@@ -52,5 +52,3 @@ ctf_local/
 - CLI is for local testing / generating golden vectors; not a production service.
 
 ---
-
-> This README should be enough for a teammate to install, test, build, and understand **what** the code does and **why** it exists.
