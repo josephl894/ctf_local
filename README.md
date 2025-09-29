@@ -1,6 +1,6 @@
 # CTF-ID Go Utils
 
-This module provides the **core ID calculations** used by the **Gnosis Conditional Tokens Framework (CTF)** — the plumbing for building prediction-market backends.
+This module provides the **core ID calculations** used by the **Gnosis Conditional Tokens Framework (CTF)**
 
 ## Features
 - **Condition ID** – unique ID for each market question  
